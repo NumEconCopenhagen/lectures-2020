@@ -175,7 +175,7 @@ status open
 
 
 \backslash
-url{https://github.com/NumEconCopenhagen/projects-2019-GROUPNAME}
+url{https://github.com/NumEconCopenhagen/projects-2020-GROUPNAME}
 \end_layout
 
 \end_inset
@@ -266,9 +266,15 @@ An idea for an extension could be:
 \begin_layout Standard
 
 \series bold
-Deadline:
-\series default
- 17th of April 23:59.
+Deadlines:
+\end_layout
+
+\begin_layout Enumerate
+Data project: 19th of April 23:59.
+\end_layout
+
+\begin_layout Enumerate
+Model project: 11th of May 23:59.
 \end_layout
 
 \end_body

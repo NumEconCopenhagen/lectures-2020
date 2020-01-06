@@ -160,7 +160,7 @@ Example of structure:
 \begin_inset CommandInset href
 LatexCommand href
 name "See this repository"
-target "https://github.com/NumEconCopenhagen/projects-2019-examples"
+target "https://github.com/NumEconCopenhagen/example-2020"
 literal "false"
 
 \end_inset
@@ -189,6 +189,14 @@ Feedback.txt
 \emph default
  file with a list of the groups each group member have given peer feedback
  to with links to the GitHub issues
+\end_layout
+
+\begin_layout Enumerate
+Your inaugural project (in the folder 
+\emph on
+/inauguralproject
+\emph default
+)
 \end_layout
 
 \begin_layout Enumerate

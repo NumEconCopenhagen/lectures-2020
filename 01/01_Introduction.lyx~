@@ -1785,22 +1785,6 @@ exercises-2020:
 problem sets, solutions etc.
 \end_layout
 
-\begin_layout Enumerate
-
-\series bold
-projects-2020-example
-\series default
-: example group repository
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-projects-2020-YOURGROUPNAME
-\series default
-: your own repository
-\end_layout
-
 \begin_layout Standard
 \begin_inset VSpace 1mm
 \end_inset

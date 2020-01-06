@@ -244,7 +244,7 @@ On GitHub by uploading it to the folder:
 
 \begin_deeper
 \begin_layout Quote
-github.com/projects-2019-YOURGROUPNAME/modelproject/
+github.com/projects-2020-YOURGROUPNAME/modelproject/
 \end_layout
 
 \end_deeper
@@ -253,27 +253,7 @@ github.com/projects-2019-YOURGROUPNAME/modelproject/
 \series bold
 Deadline:
 \series default
- 10th of May 23.59
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Supervision: 
-\series default
-The exercises class in the weeks starting 29th of April and 6th of May will
- give you time to work on your model project and receive supervision from
- the lecturer and the teaching assistants.
- Also, remember the 
-\begin_inset CommandInset href
-LatexCommand href
-name "online"
-target "https://github.com/NumEconCopenhagen/lectures-2019/issues"
-literal "false"
-
-\end_inset
-
- forum.
+ 7th of May 23.59
 \end_layout
 
 \begin_layout Itemize
