@@ -2054,15 +2054,7 @@ literal "false"
 \end_layout
 
 \begin_layout Enumerate
-App (Socrative Student): room: Mikro1
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-Room-name:
-\series default
- NumEcon
+App (Socrative Student): room: NumEcon
 \end_layout
 
 \end_deeper
