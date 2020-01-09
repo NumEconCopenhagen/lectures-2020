@@ -9,6 +9,7 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,urlcolor=blue}
 \date{}
+\usepackage{geometry}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -91,7 +92,7 @@
 
 \shape smallcaps
 \size largest
-Project 1: Data Analysis Project
+Project 0: Inaugural Project
 \end_layout
 
 \begin_layout Author
@@ -117,13 +118,8 @@ thispagestyle{empty}
 \series bold
 Vision: 
 \series default
-Programming is more than writing code.
- The ultimate goal of the projects in this course is that you learn to formulate
- a programming problem of your own choice, and find your own way to solve
- it, and present the results.
- The bullets below are minimum requirements, but otherwise it is very much
- up to you, what you will like to do with your project.
- I hope to see some creative ideas!
+The inaugural project teaches you to solve a simple economic model, and
+ present the results.
 \end_layout
 
 \begin_layout Itemize
@@ -131,16 +127,12 @@ Programming is more than writing code.
 \series bold
 Objectives:
 \series default
- In your data analysis project, you should show that you can:
+ In your inaugural project, you should show that you can:
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-Apply data cleaning and data structuring methods
-\end_layout
-
-\begin_layout Enumerate
-Apply data analysis methods
+Apply simple numerical solution and simulation methods
 \end_layout
 
 \begin_layout Enumerate
@@ -161,28 +153,16 @@ Present results in text form and in figures
 \series bold
 Content:
 \series default
- In your data analysis project, you should at a minimum:
+ In your inaugural project, you should:
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-Import data from an online source (through download or an API)
+Solution and simulation of pre-specified economic model (see next page)
 \end_layout
 
 \begin_layout Enumerate
-Present the data visually (and perhaps interactively)
-\end_layout
-
-\begin_layout Enumerate
-Apply some method(s) from descriptive economics (
-\begin_inset Quotes ald
-\end_inset
-
-samfundsbeskrivelse
-\begin_inset Quotes ard
-\end_inset
-
-)
+Visualization of solution
 \end_layout
 
 \begin_layout Standard
@@ -228,20 +208,6 @@ A single self-contained notebook (.ipynb) presenting the analysis
 \begin_layout Itemize
 
 \series bold
-Size: 
-\series default
-\emph on
-Quality before quantity
-\emph default
-.
- Cleaning and joining a couple of data sets and then making some interactive
- figures might be just fine.
- Else you will be asked to extend it for the exam.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
 Hand-in: 
 \series default
 On GitHub by uploading it to the folder:
@@ -249,7 +215,46 @@ On GitHub by uploading it to the folder:
 
 \begin_deeper
 \begin_layout Quote
-github.com/projects-2020-YOURGROUPNAME/dataproject/
+github.com/projects-2020-YOURGROUPNAME/inauguralproject/
+\end_layout
+
+\begin_layout Enumerate
+Add your group to this 
+\begin_inset CommandInset href
+LatexCommand href
+name "list"
+target "https://docs.google.com/spreadsheets/d/1HlOaNIR5wZOGxnvIxrYSrfdSKNHDu7LiwFvlSwX1Zbw/edit#gid=0"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Create your GitHub repository 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://classroom.github.com/g/bEQjpmXc"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Follow step 2-3 in this 
+\begin_inset CommandInset href
+LatexCommand href
+name "guide"
+target "https://numeconcopenhagen.netlify.com/guides/vscode-git/"
+literal "false"
+
+\end_inset
+
+ to upload
 \end_layout
 
 \end_deeper
@@ -258,16 +263,7 @@ github.com/projects-2020-YOURGROUPNAME/dataproject/
 \series bold
 Deadline:
 \series default
- 6th of April 23.59
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Peer feedback: 
-\series default
-After handing in, you will be asked to give peer feedback on the projects
- of two other groups.
+ 16th of March 23.59
 \end_layout
 
 \begin_layout Itemize
@@ -275,9 +271,298 @@ After handing in, you will be asked to give peer feedback on the projects
 \series bold
 Exam: 
 \series default
-Your data analysis project will be a part of your exam portfolio.
- You are free to incorporate the peer-feedback and other comments before
- handing in the final version.
+Your inaugural project will be a part of your exam portfolio.
+\begin_inset Newline newline
+\end_inset
+
+You can incorporate feedback before handing in the final version.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{left=3cm,right=3cm,top=2.5cm,bottom=2.5cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Labor Supply Problem
+\end_layout
+
+\begin_layout Standard
+Consider a consumer solving the following maximization problem
+\begin_inset Formula 
+\begin{eqnarray}
+c^{\star},\ell^{\star} & = & \arg\max_{c,\ell}\log(c)-\nu\frac{\ell^{1+\frac{1}{\varepsilon}}}{1+\frac{1}{\varepsilon}}\label{eq:obj}\\
+ & \text{s.t.}\nonumber \\
+x & = & m+w\ell-\left[\tau_{0}w\ell+\tau_{1}\max\{w\ell-\kappa,0\}\right]\nonumber \\
+c & \in & [0,x]\nonumber \\
+\ell & \in & [0,1],\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+where 
+\begin_inset Formula $c$
+\end_inset
+
+ is consumption, 
+\begin_inset Formula $\ell$
+\end_inset
+
+ is labor supply, 
+\begin_inset Formula $m$
+\end_inset
+
+ is cash-on-hand, 
+\begin_inset Formula $w$
+\end_inset
+
+ is the wage rate, 
+\begin_inset Formula $\tau_{0}$
+\end_inset
+
+ is the standard labor income tax, 
+\begin_inset Formula $\tau_{1}$
+\end_inset
+
+ is the top bracket labor income tax, 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ is the cut-off for the top labor income bracket, 
+\begin_inset Formula $x$
+\end_inset
+
+ is total resources, 
+\begin_inset Formula $\nu$
+\end_inset
+
+ scales the disutility of labor, and 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ is the Frisch elasticity of labor supply.
+\end_layout
+
+\begin_layout Standard
+Note that utility is monotonically increasing in consumption.
+ This implies that
+\begin_inset Formula 
+\begin{equation}
+c^{\star}=x+w\ell^{\star}-\left[\tau_{0}w\ell^{\star}+\tau_{1}\max\{w\ell^{\star}-\kappa,0\}\right].\label{eq:c}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Questions
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[1)]
+\end_layout
+
+\end_inset
+
+Construct a function which solves eq.
+ (1) given the parameters.
+\end_layout
+
+\begin_layout Standard
+We choose the following parameter values
+\begin_inset Formula 
+\[
+x=1,\,\nu=10,\,\varepsilon=0.3,\,\tau_{0}=0.4,\,\tau_{1}=0.1,\,\kappa=0.4
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[2)]
+\end_layout
+
+\end_inset
+
+Plot 
+\begin_inset Formula $\ell^{\star}$
+\end_inset
+
+ and 
+\begin_inset Formula $c^{\star}$
+\end_inset
+
+ as functions of 
+\begin_inset Formula $w$
+\end_inset
+
+ in the range 
+\begin_inset Formula $0.5$
+\end_inset
+
+ to 
+\begin_inset Formula $1.5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Consider a population with 
+\begin_inset Formula $N=10,000$
+\end_inset
+
+ individuals indexed by 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Assume the distribution of wages is uniform such that
+\begin_inset Formula 
+\[
+w_{i}\sim\mathcal{U}(0.5,1.5).
+\]
+
+\end_inset
+
+Denote the optimal choices of individual 
+\begin_inset Formula $i$
+\end_inset
+
+ by 
+\begin_inset Formula $\ell_{i}^{\star}$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{i}^{\star}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[3)]
+\end_layout
+
+\end_inset
+
+Calculate the total tax revenue given by
+\begin_inset Formula 
+\[
+T=\sum_{i=1}^{N}\left[\tau_{0}w_{i}\ell_{i}^{\star}+\tau_{1}\max\{w_{i}\ell_{i}^{\star}-\kappa,0\}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[4)]
+\end_layout
+
+\end_inset
+
+What would the tax revenue be if instead 
+\begin_inset Formula $\varepsilon=0.1$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+Consider a politician who wishes to maximize tax revenue.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[5)]
+\end_layout
+
+\end_inset
+
+Which 
+\begin_inset Formula $\tau_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $\tau_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ would you suggest him to implement? 
+\begin_inset Newline newline
+\end_inset
+
+Report the tax revenue you expect to obtain.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

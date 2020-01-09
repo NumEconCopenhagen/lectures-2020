@@ -9,6 +9,7 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,urlcolor=blue}
 \date{}
+\usepackage{geometry}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -117,8 +118,8 @@ thispagestyle{empty}
 \series bold
 Vision: 
 \series default
-The inaugural teaches you to solve a simple economic model, and present
- the results.
+The inaugural project teaches you to solve a simple economic model, and
+ present the results.
 \end_layout
 
 \begin_layout Itemize
@@ -131,7 +132,7 @@ Objectives:
 
 \begin_deeper
 \begin_layout Enumerate
-Apply simple numerical solution methods
+Apply simple numerical solution and simulation methods
 \end_layout
 
 \begin_layout Enumerate
@@ -157,7 +158,7 @@ Content:
 
 \begin_deeper
 \begin_layout Enumerate
-Solution of pre-specified economic model
+Solution and simulation of pre-specified economic model (see next page)
 \end_layout
 
 \begin_layout Enumerate
@@ -271,7 +272,297 @@ Deadline:
 Exam: 
 \series default
 Your inaugural project will be a part of your exam portfolio.
- You are free to incorporate feedback before handing in the final version.
+\begin_inset Newline newline
+\end_inset
+
+You can incorporate feedback before handing in the final version.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{left=3cm,right=3cm,top=2.5cm,bottom=2.5cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Labor Supply Problem
+\end_layout
+
+\begin_layout Standard
+Consider a consumer solving the following maximization problem
+\begin_inset Formula 
+\begin{eqnarray}
+c^{\star},\ell^{\star} & = & \arg\max_{c,\ell}\log(c)-\nu\frac{\ell^{1+\frac{1}{\varepsilon}}}{1+\frac{1}{\varepsilon}}\label{eq:obj}\\
+ & \text{s.t.}\nonumber \\
+x & = & m+w\ell-\left[\tau_{0}w\ell+\tau_{1}\max\{w\ell-\kappa,0\}\right]\nonumber \\
+c & \in & [0,x]\nonumber \\
+\ell & \in & [0,1],\nonumber 
+\end{eqnarray}
+
+\end_inset
+
+where 
+\begin_inset Formula $c$
+\end_inset
+
+ is consumption, 
+\begin_inset Formula $\ell$
+\end_inset
+
+ is labor supply, 
+\begin_inset Formula $m$
+\end_inset
+
+ is cash-on-hand, 
+\begin_inset Formula $w$
+\end_inset
+
+ is the wage rate, 
+\begin_inset Formula $\tau_{0}$
+\end_inset
+
+ is the standard labor income tax, 
+\begin_inset Formula $\tau_{1}$
+\end_inset
+
+ is the top bracket labor income tax, 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ is the cut-off for the top labor income bracket, 
+\begin_inset Formula $x$
+\end_inset
+
+ is total resources, 
+\begin_inset Formula $\nu$
+\end_inset
+
+ scales the disutility of labor, and 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ is the Frisch elasticity of labor supply.
+\end_layout
+
+\begin_layout Standard
+Note that utility is monotonically increasing in consumption.
+ This implies that
+\begin_inset Formula 
+\begin{equation}
+c^{\star}=x+w\ell^{\star}-\left[\tau_{0}w\ell^{\star}+\tau_{1}\max\{w\ell^{\star}-\kappa,0\}\right].\label{eq:c}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Questions
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[1)]
+\end_layout
+
+\end_inset
+
+Construct a function which solves eq.
+ (1) given the parameters.
+\end_layout
+
+\begin_layout Standard
+We choose the following parameter values
+\begin_inset Formula 
+\[
+x=1,\,\nu=10,\,\varepsilon=0.3,\,\tau_{0}=0.4,\,\tau_{1}=0.1,\,\kappa=0.4
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[2)]
+\end_layout
+
+\end_inset
+
+Plot 
+\begin_inset Formula $\ell^{\star}$
+\end_inset
+
+ and 
+\begin_inset Formula $c^{\star}$
+\end_inset
+
+ as functions of 
+\begin_inset Formula $w$
+\end_inset
+
+ in the range 
+\begin_inset Formula $0.5$
+\end_inset
+
+ to 
+\begin_inset Formula $1.5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Consider a population with 
+\begin_inset Formula $N=10,000$
+\end_inset
+
+ individuals indexed by 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Assume the distribution of wages is uniform such that
+\begin_inset Formula 
+\[
+w_{i}\sim\mathcal{U}(0.5,1.5).
+\]
+
+\end_inset
+
+Denote the optimal choices of individual 
+\begin_inset Formula $i$
+\end_inset
+
+ by 
+\begin_inset Formula $\ell_{i}^{\star}$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{i}^{\star}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[3)]
+\end_layout
+
+\end_inset
+
+Calculate the total tax revenue given by
+\begin_inset Formula 
+\[
+T=\sum_{i=1}^{N}\left[\tau_{0}w_{i}\ell_{i}^{\star}+\tau_{1}\max\{w_{i}\ell_{i}^{\star}-\kappa,0\}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[4)]
+\end_layout
+
+\end_inset
+
+What would the tax revenue be if instead 
+\begin_inset Formula $\varepsilon=0.1$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+Consider a politician who wishes to maximize the tax revenue.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[5)]
+\end_layout
+
+\end_inset
+
+Which 
+\begin_inset Formula $\tau_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $\tau_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ would you suggest him to implement? 
+\begin_inset Newline newline
+\end_inset
+
+Report the tax revenue you expect to obtain.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
