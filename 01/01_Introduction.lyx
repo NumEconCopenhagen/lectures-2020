@@ -514,7 +514,15 @@ economics
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
- very relevant when writing your bachelor and master thesis
+ very relevant when writing your bachelor and master theses
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ very relevant when using in your work-life
 \end_layout
 
 \begin_layout Itemize
@@ -1398,7 +1406,7 @@ Exam requirements
 \begin_inset CommandInset href
 LatexCommand href
 name "deadlines"
-target "https://docs.google.com/spreadsheets/d/1T3g-ltqZNWU_92QEdgSbyzlpUROkMUjVQkqzv6xGDD0/edit?usp=sharing"
+target "https://docs.google.com/spreadsheets/d/1T3g-ltqZNWU_92QEdgSbyzlpUROkMUjVQkqzv6xGDD0"
 literal "false"
 
 \end_inset
@@ -1828,7 +1836,7 @@ A version-control system for tracking changes in computer files and coordinating
 Note:
 \series default
  You can always download the content of a GitHub repository without using
- git.
+ git
 \begin_inset Note Note
 status open
 
@@ -2215,14 +2223,14 @@ literal "false"
 \begin_inset CommandInset href
 LatexCommand href
 name "example"
-target "https://github.com/NumEconCopenhagen/lectures-2019/issues"
+target "https://github.com/NumEconCopenhagen/lectures-2020/issues"
 literal "false"
 
 \end_inset
 
 ]
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 show the example
@@ -2258,11 +2266,10 @@ Help each other!!
 \series default
 You will learn a lot.
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
-we are in this together - too many of you for the TAs, and they also don't
- know the course
+we are in this together - to many of you for the TAs
 \end_layout
 
 \end_inset
@@ -2466,6 +2473,10 @@ Objectives:
 
 \begin_deeper
 \begin_layout Enumerate
+Apply data cleaning and data structuring methods
+\end_layout
+
+\begin_layout Enumerate
 Apply data analysis methods
 \end_layout
 
@@ -2478,7 +2489,7 @@ Document code
 \end_layout
 
 \begin_layout Enumerate
-Present results
+Present results in text form and in figures
 \end_layout
 
 \end_deeper
