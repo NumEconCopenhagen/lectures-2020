@@ -397,7 +397,7 @@ Construct a function which solves eq.
 We choose the following parameter values
 \begin_inset Formula 
 \[
-x=1,\,\nu=10,\,\varepsilon=0.3,\,\tau_{0}=0.4,\,\tau_{1}=0.1,\,\kappa=0.4
+m=1,\,\nu=10,\,\varepsilon=0.3,\,\tau_{0}=0.4,\,\tau_{1}=0.1,\,\kappa=0.4
 \]
 
 \end_inset
