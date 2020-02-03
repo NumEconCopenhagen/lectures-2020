@@ -389,10 +389,6 @@ Introduction to Programming and Numerical Analysis
 \end_layout
 
 \begin_layout Plain Layout
-I have basically been dreaming about this course for years
-\end_layout
-
-\begin_layout Plain Layout
 I am so excited to get started
 \end_layout
 
@@ -861,7 +857,7 @@ status open
 
 
 \series bold
-First generation: 
+Second generation: 
 \series default
 All of your feedback is very important for optimizing and improving the
  course!
@@ -1024,7 +1020,11 @@ Markets are not complete
 \end_layout
 
 \begin_layout Enumerate
-The dynamic equilibrium path is found approximately on a (large) computer
+The dynamic equilibrium path is found approximately 
+\begin_inset Newline newline
+\end_inset
+
+on a (large) computer
 \end_layout
 
 \end_deeper
@@ -1376,7 +1376,7 @@ Time, place and exam
 \begin_layout Itemize
 
 \series bold
-Time and place:
+Time:
 \end_layout
 
 \begin_deeper
@@ -2058,7 +2058,7 @@ literal "false"
 \begin_inset Formula $\rightarrow$
 \end_inset
 
- room: Mikro1
+ room: NumEcon
 \end_layout
 
 \begin_layout Enumerate
