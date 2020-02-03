@@ -1051,16 +1051,6 @@ Who you are
 
 \begin_layout Frame
 [results from questionnaire]
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1123,7 +1113,7 @@ Distribution:
 status open
 
 \begin_layout Plain Layout
-simply to install version of Python with all the most common extensions
+simply to install version of Python with all the most common packages
 \end_layout
 
 \end_inset
@@ -1364,7 +1354,7 @@ literal "false"
 status open
 
 \begin_layout Plain Layout
-Time, place and exam
+Lectures, classes and exam
 \end_layout
 
 \end_inset
@@ -1376,7 +1366,7 @@ Time, place and exam
 \begin_layout Itemize
 
 \series bold
-Time:
+Lectures and classes:
 \end_layout
 
 \begin_deeper
