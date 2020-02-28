@@ -158,11 +158,11 @@ Content:
 
 \begin_deeper
 \begin_layout Enumerate
-Solution and simulation of pre-specified economic model (see next page)
+Solve and simulate a pre-specified economic model (see next page)
 \end_layout
 
 \begin_layout Enumerate
-Visualization of solution
+Visualize results
 \end_layout
 
 \begin_layout Standard
@@ -188,7 +188,7 @@ literal "false"
 \series bold
 Structure: 
 \series default
-Your data analysis project should consist of:
+Your inaugural  project should consist of:
 \end_layout
 
 \begin_deeper
