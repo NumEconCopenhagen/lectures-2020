@@ -164,7 +164,7 @@ def gauss_seidel(A,b,x0,max_iter=500,tau=10**(-8),do_print=False):
 
         # v. misc
         if do_print:
-            print(f'{i:2d}',x)
+            print(f'{i:3d}: [{x[0]:12.8f} {x[1]:12.8f} {x[2]:12.8f}]')
 
         i += 1
 

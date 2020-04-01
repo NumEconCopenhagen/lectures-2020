@@ -395,7 +395,7 @@ Problems
 \series bold
 Structure:
 \series default
- 3 problems with 3-6 sub-questions on solving and simulating models and
+ 2 problems with 3-6 sub-questions on solving and simulating models and
  analyzing their implications graphically and numerically.
 \end_layout
 
@@ -415,7 +415,7 @@ Solve and simulate an AS-AD model
 \end_layout
 
 \begin_layout Enumerate
-Solve for the Walrus-equilibrium in an exchange economy
+Solve for the Walras-equilibrium in an exchange economy
 \end_layout
 
 \begin_layout Enumerate
@@ -458,7 +458,7 @@ Lecture notebooks
 \begin_inset Formula $\div$
 \end_inset
 
- sections marked with *)
+ sections marked with +)
 \end_layout
 
 \begin_layout Itemize
@@ -639,8 +639,8 @@ Online:
 
 \begin_inset CommandInset href
 LatexCommand href
-name "https://github.com/NumEconCopenhagen/lectures-2019/issues"
-target "https://github.com/NumEconCopenhagen/lectures-2019/issues"
+name "https://github.com/NumEconCopenhagen/lectures-2020/issues"
+target "https://github.com/NumEconCopenhagen/lectures-2020/issues"
 literal "false"
 
 \end_inset
