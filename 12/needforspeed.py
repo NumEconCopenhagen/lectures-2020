@@ -1,6 +1,4 @@
 import numpy as np
-import os
-import ctypes as ct
 
 def create_list(n):
     return [i*i for i in range(n)]
