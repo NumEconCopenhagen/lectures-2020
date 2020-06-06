@@ -189,10 +189,7 @@ Analyze one or more extensions of the baseline model
 \series bold
 Limitation: 
 \series default
-\emph on
-sympy
-\emph default
- can only play a small role in your project
+sympy can only play a small role in your project
 \end_layout
 
 \begin_layout Itemize
